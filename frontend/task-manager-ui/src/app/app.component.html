@@ -1,0 +1,10 @@
+<nav style="display:flex; gap:12px; padding:10px; border-bottom:1px solid #eee">
+  <a routerLink="/login">Login</a>
+  <a routerLink="/register">Register</a>
+  <a routerLink="/tasks">Tasks</a>
+  <a style="margin-left:auto; cursor:pointer" (click)="logout()">Logout</a>
+  <span style="color:#888">JWT is stored in localStorage</span>
+  <input placeholder="Base API e.g. http://localhost:5000/api" style="flex:1" [value]="apiHint" readonly />
+</nav>
+
+<router-outlet />
